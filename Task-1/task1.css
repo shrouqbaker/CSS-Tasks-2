@@ -1,18 +1,25 @@
 :root {
-    --primary-color: rgb(165, 31, 10);
+    --primary-color: #E91E63;
+    --secondary-color: #F8BBD0;
+    --text-color: #333333;
+    --button-color: #D81B60;
+    --backgroung-color: #FFF8FA;
+
+
 }
 
 body {
     margin: 0;
-    
+    background-color: var(--backgroung-color);
+
 }
 
 
 header {
-    background-color: white;
+    background-color: var(--backgroung-color);
     color: var(--primary-color);
     border: none;
-    border-bottom: 3px solid var(--primary-color);
+    border-bottom: 3px solid var(--secondary-color);
     font-size: 30px;
     font-weight: bold;
     display: flex;
@@ -34,7 +41,9 @@ nav {
 }
 
 footer {
-    background-color: rgb(77, 75, 75);
+    position: static;
+
+    background-color: var(--primary-color);
     color: white;
     display: flex;
     height: 50px;
@@ -108,19 +117,18 @@ footer {
     text-align: center;
     padding: 15px;
     gap: 15px;
-    box-shadow: 3px 2px 3px 2px rgba(255, 140, 140, 0.4);
+    box-shadow: 3px 2px 2px 2px var(--secondary-color);
+    background-color: white;
 }
 
 .icon {
     font-size: 90px;
-    color: var(--primary-color);
-
 }
 
 .card-title {
     font-size: 40px;
     font-weight: bold;
-   
+
 }
 
 .card-description {
@@ -134,6 +142,8 @@ footer {
     align-items: center;
     justify-items: center;
     margin: 50px;
+    height: auto;
+
 }
 
 .text-about {
@@ -151,7 +161,7 @@ footer {
 .sub-about {
     font-size: 40px;
     font-weight: bold;
-    color: gray;
+    color: var(--secondary-color);
 }
 
 .descri-about {
@@ -159,30 +169,29 @@ footer {
 }
 
 .pic-about {
-    width: 90%;
+    width: 95%;
+    border-radius: 25px;
 }
 
 /* Tablet */
 @media (max-width: 768px) {
     header {
-        font-size: 17px;
+        font-size: 18px;
         padding: 12px 20px;
     }
 
     .name-web {
-        font-size: 40PX;
+        font-size: 35PX;
     }
 
     nav {
-
         gap: 10px;
     }
+
 
     footer {
         height: 40px;
         font-size: 20PX;
-
-
     }
 
     .pic {
@@ -211,7 +220,7 @@ footer {
     .about-section {
         grid-template-columns: 1fr;
         gap: 30px;
-        margin: 30px;
+        margin: 20px;
     }
 
     .text-about {
